@@ -43,10 +43,16 @@ public class ProgramaPrincipal {
 				for(int i= 0; i< NovaConta.size(); i++){
 					ContaCorrente conta = NovaConta.get(i);
 					System.out.println("Nome do Usuario: " +conta.nomeDoCliente);
-					System.out.println("Nome do Usuario: " +conta.numeroDaAgencia);
-					System.out.println("Nome do Usuario: " +conta.numeroDaConta);
-					System.out.println("Nome do Usuario: " +conta.saldo);
+					System.out.println("Numero da agencia: " +conta.numeroDaAgencia);
+					System.out.println("Numero da conta: " +conta.numeroDaConta);
+					System.out.println("Saldo: " +conta.saldo);
 				}				
+				
+				System.out.println("Cliente "+contaDoCliente.nomeDoCliente + " saldo: " +contaDoCliente.saldo);
+				
+				contaDoCliente.sacar(200);
+				
+				System.out.println("Cliente "+contaDoCliente.nomeDoCliente +" saldo: " +contaDoCliente.saldo);
 				
 				System.out.println("continuar");
 				continuar = entrada.nextLine();		
